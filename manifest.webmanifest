@@ -1,5 +1,5 @@
 {
-    "name": "Hearthstone - Rastreia Cartas",
+    "name": "Hearthstone Rastreia Cartas",
     "short_name": "Rastreia",
     "start_url": "https://rastreiacartas.jaao-web.repl.co/",
     "display": "standalone",
@@ -7,8 +7,8 @@
     "background_color": "#FFFAFA",
     "icons" : [
         {
-            "src": "imagens/logo-512x.png",
-            "sizes": "512x512",
+            "src": "imagens/logo-192px.png",
+            "sizes": "192x192",
             "type": "image/png"
         },
         {
