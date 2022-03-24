@@ -7,9 +7,9 @@
     "background_color": "#FFFAFA",
     "icons" : [
         {
-            "src": "imagens/logo-192px.png",
-            "sizes": "192x192",
-            "type": "imagens/png"
+            "src": "imagens/logo-512x.png",
+            "sizes": "512x512",
+            "type": "image/png"
         },
         {
             "src": "imagens/logo-512px.png",
