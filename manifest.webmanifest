@@ -1,0 +1,20 @@
+{
+    "name": "Hearthstone - Rastreia Cartas",
+    "short_name": "Rastreia",
+    "start_url": "http://127.0.0.1:5500/",
+    "theme_collor": "#00B2EE",
+    "backgrond_collor": "#FFFAFA",
+    "display": "standalone",
+    "icons" : [
+        {
+            "src": "imagens/logo-512px.png",
+            "sizes": "512x512",
+            "type": "imagens/png"
+        },
+        {
+            "src": "imagens/b.png",
+            "sizes": "192x192",
+            "type": "imagens/png"
+        }
+    ]
+}
