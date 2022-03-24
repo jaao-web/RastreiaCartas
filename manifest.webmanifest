@@ -2,9 +2,9 @@
     "name": "Hearthstone - Rastreia Cartas",
     "short_name": "Rastreia",
     "start_url": "https://rastreiacartas.jaao-web.repl.co/",
-    "theme_collor": "#00B2EE",
-    "backgrond_collor": "#FFFAFA",
     "display": "standalone",
+    "theme_color": "#00B2EE",
+    "background_color": "#FFFAFA",
     "icons" : [
         {
             "src": "imagens/logo-192px.png",
