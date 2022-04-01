@@ -1,0 +1,24 @@
+{
+  "name": "rastreiacartas",
+  "version": "1.0.0",
+  "description": "O que é? Aplicativo em PWA que administra coleção de cartas do jogo HearthStone. O aplicativo é simples e fácil de utilizar, servindo para ajudar o usuário a lembrar de seu deck, possibilitando criar algumas novas opções em qualquer lugar. O aplicativo será capaz de deixar o usuário determinar também a porcentagem de vítoria do jogador com o deck atual dele.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaao-web/RastreiaCartas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaao-web/RastreiaCartas/issues"
+  },
+  "homepage": "https://github.com/jaao-web/RastreiaCartas#readme",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3"
+  }
+}
