@@ -1,3 +1,18 @@
 body {
     background: "#FFFAFA";
 }
+
+.wrapper {
+    background-color: #FFFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+.icones {
+    padding: 15px;
+}
+
