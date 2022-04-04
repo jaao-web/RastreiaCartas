@@ -2,27 +2,56 @@
 <html lang="en">
 
 <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="manifest" href="manifest.webmanifest" />
-      <link rel="apple-touch-icon" href="imagens/logo-192px.png" />
-      <link rel="icon" type="image/x-icon" href="imagens/logo-192px.png" />
-      <script src="./index.js"></script>
-      <title>Home</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link href="master.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" href="imagens/logo-192px.png" />
+    <link rel="icon" type="image/x-icon" href="imagens/logo-192px.png" />
+    <script src="./index.js"></script>
+    <title>Home</title>
 </head>
 
 <body>
-    <div class="wrapper" id="primeira-aba" >
-        <img src="imagens/malfurion.jpg" width="390px" alt="top header">
-        <img src="imagens/plusIcon.png"  width="15%" class="icones"  ></img>
-        <div width="70%"></div>
-        <img src="imagens/trashIcon.png" width="15%" class="icones" ></img>
-        
+    <div id="primeira-aba" class="wrapper">
+        <img src="imagens/malfurion.jpg" class="cabecalho" width="100%" alt="top cabecalho">
+        <div width="100px" class="flexBox">
+            <img src="imagens/plusIcon.png" width="60px" class="icones"></img>
+            <img src="imagens/trashIcon.png" width="60px" class="icones"></img>
+        </div>
+        <div width="70%" class="flexBox">
+            <img src="imagens/0avivar.png" width="200px"/>
+            <img src="imagens/2eclipse lunar.png" width="200px"/>
+            <img src="imagens/2eclipse solar.png" width="200px"/>
+            <img src="imagens/5guff.png" width="200px"/>
+            <img src="imagens/7escama de onixia.png" width="200px"/>
+            <img src="imagens/8kazakusan.png" width="200px"/>
+        </div>
+        <div>
+            <h5>Porcentagem de vitoria: 50%</h5>
+            <h5 >4-4</h5>
+        </div>
+        <div class="botoesVitorias">
+            <button class="botaoJogos">Vitória</button>
+            <button class="botaoJogos">Derrota</button>
+        </div>
+        <div>
+            <button class="botaoLimpar">Limpar Jogos</button>
+            <button class="botaoApagar">Apagar Jogos</button>
+        </div>
     </div>
 
     <div class="wrapper" id="segunda-aba">
-
+        <img src="imagens/malfurion.jpg" class="cabecalho" width="100%" alt="top cabecalho">
+        <div height="500px" class="cartas">
+            <img src="imagens/0innervate-.png" width="140px"/>
+            <img src="imagens/2Lunar-.png" width="140px"/>
+            <img src="imagens/2Solar-.png" width="140px"/>
+            <img src="imagens/5Guff-.png" width="140px"/>
+            <img src="imagens/7Scale-of-Onyxia-.png" width="140px"/>
+            <img src="imagens/8Kazakusan-.png" width="140px"/>
+        </div>
     </div>
 </body>
 

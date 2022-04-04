@@ -5,14 +5,70 @@ body {
 .wrapper {
     background-color: #FFFAFA;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
     flex-direction: column;
+    flex-wrap: wrap;
     height: 100vh;
     width: 100%;
 }
 
-.icones {
-    padding: 15px;
+.flexBox {
+    flex-wrap: wrap;
 }
 
+.icones {
+    padding: 10px;
+}
+
+.cabecalho {
+    padding: 0;
+    margin: 0;
+}
+
+.botoesVitorias {
+    align-items: stretch;
+}
+
+.cartas {
+    align-items: stretch;
+}
+
+.botaoJogos {
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .botaoLimpar {
+    border: none;
+    color: rgb(0, 0, 0);
+    background-color: #0f7cd6;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .botaoApagar {
+    border: none;
+    color: rgb(0, 0, 0);
+    background-color: #e21b1b;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
