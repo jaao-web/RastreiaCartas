@@ -14,19 +14,19 @@
 </head>
 
 <body>
-    <div id="primeira-aba" class="wrapper">
+    <div id="primeira-aba" class="wrapper" style="display: flex;">
         <img src="imagens/malfurion.jpg" class="cabecalho" width="100%" alt="top cabecalho">
         <div width="100px" class="flexBox">
-            <img src="imagens/plusIcon.png" width="60px" class="icones"></img>
-            <img src="imagens/trashIcon.png" width="60px" class="icones"></img>
+            <img src="imagens/plusIcon.png" width="60px" class="icones" onclick="selecionarAba(2)"></img>
+            <img src="imagens/trashIcon.png" width="60px" class="icones" onclick="apagarCard()"></img>
         </div>
         <div width="70%" class="flexBox">
-            <img src="imagens/0avivar.png" width="200px"/>
-            <img src="imagens/2eclipse lunar.png" width="200px"/>
-            <img src="imagens/2eclipse solar.png" width="200px"/>
-            <img src="imagens/5guff.png" width="200px"/>
-            <img src="imagens/7escama de onixia.png" width="200px"/>
-            <img src="imagens/8kazakusan.png" width="200px"/>
+            <img src="imagens/0avivar.png" id="avivar" width="200px" style="display: none;"onclick="setarCard('avivar')"/>
+            <img src="imagens/2eclipse lunar.png" id="lunar" width="200px" style="display: none;"onclick="setarCard('lunar')"/>
+            <img src="imagens/2eclipse solar.png" id="solar" width="200px" style="display: none;"onclick="setarCard('solar')"/>
+            <img src="imagens/5guff.png" width="200px" id="guff" style="display: none;"onclick="setarCard('guff')"/>
+            <img src="imagens/7escama de onixia.png" id="escama" width="200px" style="display: none;"onclick="setarCard('escama')"/>
+            <img src="imagens/8kazakusan.png" width="200px" id="kazakusan" style="display: none;"onclick="setarCard('kazakusan')"/>
         </div>
         <div>
             <h5>Porcentagem de vitoria: 50%</h5>
@@ -42,15 +42,15 @@
         </div>
     </div>
 
-    <div class="wrapper" id="segunda-aba">
+    <div class="wrapper" id="segunda-aba" style="display: none;">
         <img src="imagens/malfurion.jpg" class="cabecalho" width="100%" alt="top cabecalho">
         <div height="500px" class="cartas">
-            <img src="imagens/0innervate-.png" width="140px"/>
-            <img src="imagens/2Lunar-.png" width="140px"/>
-            <img src="imagens/2Solar-.png" width="140px"/>
-            <img src="imagens/5Guff-.png" width="140px"/>
-            <img src="imagens/7Scale-of-Onyxia-.png" width="140px"/>
-            <img src="imagens/8Kazakusan-.png" width="140px"/>
+            <img src="imagens/0innervate-.png" width="140px" onclick="validarApagarCard('avivar', 'flex')"/>
+            <img src="imagens/2Lunar-.png" width="140px"  onclick="validarApagarCard('lunar', 'flex')"/>
+            <img src="imagens/2Solar-.png" width="140px" onclick="validarApagarCard('solar', 'flex')"/>
+            <img src="imagens/5Guff-.png" width="140px" onclick="validarApagarCard('guff', 'flex')"/>
+            <img src="imagens/7Scale-of-Onyxia-.png" width="140px" onclick="validarApagarCard('escama', 'flex')"/>
+            <img src="imagens/8Kazakusan-.png" width="140px" onclick="validarApagarCard('kazakusan', 'flex')"/>
         </div>
     </div>
 </body>
