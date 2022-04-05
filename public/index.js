@@ -3,6 +3,10 @@ window.addEventListener('load', () => {
 })
 
 let cardSelecionado;
+let prctgVitoria = 0;
+let vitorias = 0;
+let derrotas = 0;
+let textoVitoriaTotal = 'Porcentagem de vitoria: ' + prctgVitoria + '%';
 
 function registerServiceWorker() {
   if ('serviceWorker' in navigator) {
@@ -25,21 +29,60 @@ function selecionarAba(aba) {
     segundaaaba.style.display = 'flex';
   }
 
-  function validarApagarCard(card, estilo){
+  function validarApagarCard(card, estilo) {
     let cardAtivado = document.getElementById(card);
     cardAtivado.style.display = estilo;
     selecionarAba(1);
   }
   window.validarApagarCard = validarApagarCard
 
-  function setarCard(card){
+  function setarCard(card) {
     cardSelecionado = card;
   }
   window.setarCard = setarCard
 
-  function apagarCard(){
+  function apagarCard() {
     validarApagarCard(cardSelecionado, 'none');
   }
   window.apagarCard = apagarCard
 
+  function winLose(jogo) {
+    if (jogo === 'v') {
+      vitorias++
+      console.log(vitorias)
+    }
+    else {
+      derrotas++
+    }
+    fazPorcentagem()
+    exibeNum()
+  }
+  window.winLose = winLose
+
+ function exibeNum(){
+    document.getElementById('textovit').innerHTML = 'Porcentagem de vitória: ' + prctgVitoria + '%'
+    document.getElementById('numvit').innerHTML = vitorias + '-' + derrotas
+  }
+
+  function fazPorcentagem() {
+    let totalJogos = vitorias + derrotas
+    prctgVitoria = (vitorias / totalJogos) * 100
+  }
+
+  function apagarDeck() {
+    validarApagarCard('avivar', 'none')
+    validarApagarCard('lunar', 'none')
+    validarApagarCard('solar', 'none')
+    validarApagarCard('guff', 'none')
+    validarApagarCard('escama', 'none')
+    validarApagarCard('kazakusan', 'none')
+  }
+  window.apagarDeck = apagarDeck
+
+  function apagarJogos(){
+    vitorias = 0
+    derrotas = 0
+    exibeNum()
+  }
+  window.apagarJogos = apagarJogos
 }
